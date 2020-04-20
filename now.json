@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "builds": [{ "src": "app.js", "use": "@now/node-server" }],
+  "routes": [
+    {
+      "src": "/users",
+      "dest": "/app.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/users",
+      "dest": "/app.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/lists",
+      "dest": "/app.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/lists",
+      "dest": "/app.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/lists",
+      "dest": "/app.js",
+      "methods": ["DELETE"]
+    },
+    {
+      "src": "/lists",
+      "dest": "/app.js",
+      "methods": ["PATCH"]
+    }
+  ]
+}
